@@ -12,6 +12,7 @@ import { Router } from '@angular/router';
 
 export class MemberListComponent implements OnInit {
   members: FirebaseListObservable<any[]>;
+  roleFilter: string = "All";
 
   constructor(private memberService: MemberService, private router: Router) { }
 
@@ -29,6 +30,10 @@ export class MemberListComponent implements OnInit {
     } else {
       return true;
     }
+  }
+
+  onChange(option) {
+    this.roleFilter = option;
   }
 
 }

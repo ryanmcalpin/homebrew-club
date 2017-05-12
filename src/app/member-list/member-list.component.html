@@ -1,12 +1,19 @@
 <div class="row">
-  <div class="small-12 columns">
+  <div class="small-8 columns">
     <h2>Our Members</h2>
   </div>
+  <div class="small-3 columns">
+    <select (change)="onChange($event.target.value)">
+      <option value="All" selected="selected">All Members</option>
+      <option value="Administrator">Administrators</option>
+      <option value="Founder">Founders</option>
+    </select>
+  </div>
 </div>
-<div *ngFor="let member of members | async" class="row">
+<div *ngFor="let member of members | async | role:roleFilter" class="row">
   <div class="small-12 columns">
     <div (click)="memberClick(member)" class="callout">
-      <h5>{{member.firstName}} {{member.lastName}}<span *ngIf="roleCheck(member.role)">, {{member.role}}</span></h5>
+      <h5>{{member.firstName}} {{member.lastName}}<span *ngIf="roleCheck(member.role)"><em>, {{member.role}}</em></span></h5>
       <h6>{{member.city}}, {{member.state}}, {{member.country}}</h6>
       <h6>Joined {{member.dateJoined}}</h6>
       <h6>Favorite styles: {{member.favoriteStyles}}</h6>

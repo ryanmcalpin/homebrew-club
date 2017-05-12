@@ -9,6 +9,7 @@ import { MemberService } from '../member.service';
   styleUrls: ['./member-profile.component.css', '../../css/foundation.css'],
   providers: [MemberService]
 })
+
 export class MemberProfileComponent implements OnInit {
   memberId: string;
   member;
