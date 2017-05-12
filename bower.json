@@ -1,0 +1,17 @@
+{
+  "name": "homebrew-club",
+  "description": "",
+  "main": "",
+  "authors": [
+    "Ryan McAlpin <rhmcalpin@gmail.com>"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
