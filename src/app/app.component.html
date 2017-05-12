@@ -4,6 +4,7 @@
     <div class="top-bar-left">
       <ul class="vertical medium-horizontal menu">
         <li><a routerLink="">Home</a></li>
+        <li><a routerLink="members">Members</a></li>
         <li><a routerLink="about">About</a></li>
       </ul>
     </div>
@@ -11,6 +12,10 @@
   </div>
 </div>
 
-<h1>{{title}}</h1>
+<div class="row">
+  <div class="small-12 columns">
+    <h1>{{title}}</h1>
+  </div>
+</div>
 
 <router-outlet></router-outlet>
