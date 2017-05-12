@@ -23,4 +23,12 @@ export class MemberListComponent implements OnInit {
     this.router.navigate(['members', member.$key]);
   }
 
+  roleCheck(memberRole) {
+    if (memberRole === "Member") {
+      return false;
+    } else {
+      return true;
+    }
+  }
+
 }
