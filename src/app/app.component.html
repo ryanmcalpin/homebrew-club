@@ -1,3 +1,16 @@
-<h1>
-  {{title}}
-</h1>
+<div class="top-bar">
+  <div class="top-bar-title"><strong>HBC</strong></div>
+  <div>
+    <div class="top-bar-left">
+      <ul class="vertical medium-horizontal menu">
+        <li><a routerLink="">Home</a></li>
+        <li><a routerLink="about">About</a></li>
+      </ul>
+    </div>
+    <div class="top-bar-right"></div>
+  </div>
+</div>
+
+<h1>{{title}}</h1>
+
+<router-outlet></router-outlet>
