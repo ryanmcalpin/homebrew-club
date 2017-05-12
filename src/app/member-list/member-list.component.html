@@ -3,3 +3,5 @@
     <h2>Our Members</h2>
   </div>
 </div>
+
+<p *ngFor="let member of members | async">{{member.firstName}}</p>
