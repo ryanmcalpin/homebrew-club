@@ -10,6 +10,7 @@ import { MemberListComponent } from './member-list/member-list.component';
 import { AboutComponent } from './about/about.component';
 import { routing } from './app.routing';
 import { masterFirebaseConfig } from './api-keys';
+import { MemberProfileComponent } from './member-profile/member-profile.component';
 
 export const firebaseConfig = {
   apiKey: masterFirebaseConfig.apiKey,
@@ -24,7 +25,8 @@ export const firebaseConfig = {
     AppComponent,
     WelcomeComponent,
     MemberListComponent,
-    AboutComponent
+    AboutComponent,
+    MemberProfileComponent
   ],
   imports: [
     BrowserModule,

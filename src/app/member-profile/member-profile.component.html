@@ -1,0 +1,13 @@
+<div class="row">
+  <div class="small-12 columns">
+    <div class="callout">
+      <h2>{{(member | async)?.firstName}} {{(member | async)?.lastName}}</h2>
+      <h5>{{(member | async)?.city}}, {{(member | async)?.state}}, {{(member | async)?.country}}</h5>
+      <p>Member since {{(member | async)?.dateJoined}}, homebrewer since {{(member | async)?.yearStarted}}</p>
+      <h3>Favorite Styles</h3>
+      <p>{{(member | async)?.favoriteStyles}}</p>
+      <h3>Bio</h3>
+      <p>{{(member | async)?.bio}}</p>
+    </div>
+  </div>
+</div>
