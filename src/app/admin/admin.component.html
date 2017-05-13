@@ -1,0 +1,11 @@
+<div class="row">
+  <div class="small-12 columns">
+    <h2>Administration</h2>
+    <ul class="vertical medium-horizontal menu">
+      <li><a (click)="clickNew()" id="firstAdmin"><p>Create New Member</p></a></li>
+      <li><a (click)="clickEdit()" ><p>Edit Member</p></a></li>
+    </ul>
+  </div>
+</div>
+<app-new-member *ngIf="newShow" (newShowSender)="clear()"></app-new-member>
+<p *ngIf="editShow"> replace with member list</p>

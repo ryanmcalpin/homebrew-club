@@ -12,7 +12,7 @@
 </div>
 <div *ngFor="let member of members | async | role:roleFilter" class="row">
   <div class="small-12 columns">
-    <div (click)="memberClick(member)" class="callout">
+    <div (click)="memberClick(member)" class="callout clickable">
       <h5>{{member.firstName}} {{member.lastName}}<span *ngIf="roleCheck(member.role)"><em>, {{member.role}}</em></span></h5>
       <h6>{{member.city}}, {{member.state}}, {{member.country}}</h6>
       <h6>Joined {{member.dateJoined}}</h6>

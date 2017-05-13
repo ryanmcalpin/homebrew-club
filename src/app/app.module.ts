@@ -12,6 +12,8 @@ import { routing } from './app.routing';
 import { masterFirebaseConfig } from './api-keys';
 import { MemberProfileComponent } from './member-profile/member-profile.component';
 import { RolePipe } from './role.pipe';
+import { AdminComponent } from './admin/admin.component';
+import { NewMemberComponent } from './new-member/new-member.component';
 
 export const firebaseConfig = {
   apiKey: masterFirebaseConfig.apiKey,
@@ -28,7 +30,9 @@ export const firebaseConfig = {
     MemberListComponent,
     AboutComponent,
     MemberProfileComponent,
-    RolePipe
+    RolePipe,
+    AdminComponent,
+    NewMemberComponent
   ],
   imports: [
     BrowserModule,

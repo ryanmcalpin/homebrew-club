@@ -1,5 +1,5 @@
 /* You can add global styles to this file, and also import other style files */
-p, select {
+p, select, label, input {
   font-family: sans-serif !important;
 }
 
@@ -9,4 +9,22 @@ select {
 
 .menu li a p{
   margin-bottom: 0px;
+}
+
+.clickable:hover {
+  background-color: #efefef !important;
+  cursor: pointer;
+}
+
+body {
+  width: 96%
+}
+
+#nav {
+  /*position: absolute;*/
+  /*width: 96%;*/
+}
+
+#firstAdmin {
+  padding-left: 0px;
 }

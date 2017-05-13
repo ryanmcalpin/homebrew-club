@@ -1,0 +1,94 @@
+<form>
+  <div class="row">
+    <div class="small-1 columns">
+      <label for="firstName" class="text-right middle">First Name</label>
+    </div>
+    <div class="small-10 columns">
+      <input type="text" #firstName>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="small-1 columns">
+      <label for="lastName" class="text-right middle">Last Name</label>
+    </div>
+    <div class="small-10 columns">
+      <input type="text" #lastName>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="small-1 columns">
+      <label for="role" class="text-right middle">Role</label>
+    </div>
+    <div class="small-10 columns">
+      <input type="text" #role>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="small-1 columns">
+      <label for="yearStarted" class="text-right middle">Year Started</label>
+    </div>
+    <div class="small-10 columns">
+      <input type="text" #yearStarted>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="small-1 columns">
+      <label for="bio" class="text-right middle">Bio</label>
+    </div>
+    <div class="small-10 columns">
+      <input type="text" #bio>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="small-1 columns">
+      <label for="favoriteStyles" class="text-right middle">Favorite Styles</label>
+    </div>
+    <div class="small-10 columns">
+      <input type="text" #favoriteStyles>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="small-1 columns">
+      <label for="city" class="text-right middle">City</label>
+    </div>
+    <div class="small-10 columns">
+      <input type="text" #city>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="small-1 columns">
+      <label for="state" class="text-right middle">State</label>
+    </div>
+    <div class="small-10 columns">
+      <input type="text" #state>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="small-1 columns">
+      <label for="country" class="text-right middle">Country</label>
+    </div>
+    <div class="small-10 columns">
+      <input type="text" #country>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="small-1 columns">
+      <label for="zip" class="text-right middle">Zip Code</label>
+    </div>
+    <div class="small-10 columns">
+      <input type="text" #zip>
+    </div>
+  </div>
+
+  <button (click)="clickAdd(firstName.value, lastName.value, role.value, yearStarted.value, bio.value, favoriteStyles.value, city.value, state.value, country.value, zip.value)" class="button large float-right">ADD MEMBER</button>
+
+</form>

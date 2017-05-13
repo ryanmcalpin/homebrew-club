@@ -23,6 +23,7 @@ This is a website that manages a homebrew beer club. Users can view a list of al
 ## Improvements
 * Users can add recipes to their profiles
 * Users can view a list of all recipes
+* Add admin authorization
 
 ## Legal
 Copyright (c) 2017 Copyright Ryan McAlpin, All Rights Reserved.<br/>
