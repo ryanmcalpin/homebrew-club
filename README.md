@@ -21,6 +21,7 @@ This is a website that manages a homebrew beer club. Users can view a list of al
 * Navigate to localhost:4200 in browser
 
 ## Improvements
+* Administrators can edit/delete user profiles
 * Users can add recipes to their profiles
 * Users can view a list of all recipes
 * Add admin authorization
